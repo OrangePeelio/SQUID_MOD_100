@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "squidmod100",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Squid Mod 100",
+  "description": "What's better than squids? More squids!",
   "authors": [
-    "Turnip Labs"
+    "Orange_Peel"
   ],
   "contact": {
     "homepage": "",
@@ -19,20 +19,20 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"orangepeel.squidmod100.SquidMod100"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"orangepeel.squidmod100.SquidMod100"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"orangepeel.squidmod100.SquidMod100"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"orangepeel.squidmod100.SquidMod100"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+    "squidmod100.mixins.json"
   ],
 
   "depends": {
