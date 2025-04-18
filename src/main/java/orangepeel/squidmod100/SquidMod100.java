@@ -5,6 +5,7 @@ import net.minecraft.client.gui.guidebook.mobs.MobInfoRegistry;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.item.Items;
 import orangepeel.squidmod100.entities.MobGiantSquid;
+import orangepeel.squidmod100.entities.MobGlowSquid;
 import orangepeel.squidmod100.entities.SquidEntities;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -41,7 +42,11 @@ public class SquidMod100 implements ModInitializer, RecipeEntrypoint, GameStartE
 	public void afterGameStart() {
 
 		MobInfoRegistry.register(MobGiantSquid.class, "giantsquid.name", "giantsquid.desc",
-			10, 400, new MobInfoRegistry.MobDrop[]{new MobInfoRegistry.MobDrop(new ItemStack(Items.DYE, 1, 15),
+			20, 30, new MobInfoRegistry.MobDrop[]{new MobInfoRegistry.MobDrop(new ItemStack(Items.DYE, 1, 15),
 				1.0f, 1, 10)});
+		MobInfoRegistry.register(MobGlowSquid.class, "glowsquid.name", "glowsquid.desc",
+			10, 15, new MobInfoRegistry.MobDrop[]{new MobInfoRegistry.MobDrop(new ItemStack(Items.DUST_GLOWSTONE, 1),
+				1.0f, 0, 2)});
+
 	}
 }
