@@ -40,5 +40,9 @@
     "fabricloader": ">=0.15.5"
   },
   "suggests": {
-  }
+  },
+	"initModels": [
+		"orangepeel.squidmod100.ModelInitializer"
+	]
+
 }
